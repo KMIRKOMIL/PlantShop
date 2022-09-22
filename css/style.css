@@ -1,0 +1,312 @@
+@import "./fonts.css";
+:root{
+    --NBL: "Nunito-Black", sans-serif;
+    --NBO: "Nunito-Bold", sans-serif;
+    --PM: "Poppins-Medium", sans-serif;
+    --RM: "Raleway-Medium", sans-serif;
+    --WM: "WorkSans-Medium", sans-serif;
+    --WR: "WorkSans-Regular", sans-serif;
+    --MR: "Montserrat-Regular", sans-serif;
+    --MM: "Montserrat-Medium", sans-serif;
+    --MB: "Montserrat-Bold", sans-serif;
+    --white: #FFFFFF;
+    --green: #156963;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #E5E5E5;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    position: relative;
+}
+/* header stert */
+
+.header__inner{
+    background: url(../img/header-img.png) no-repeat;
+    /* height: 740px; */
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 56px 664px;
+}
+.nav__logo{
+    font-family: var(--NBL);
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--white);
+    background: url(../img/logo-bg.png) no-repeat center/cover;
+    padding: 10px 13px;
+}
+.nav__item{
+    display: flex;
+    align-items: center;
+}
+.nav__icon2{
+    margin-right: 8px;
+}
+.nav__icon1{
+    margin-right: 43.33px;
+}
+.nav__link{
+    font-family: var(--NBO);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--green);
+    padding: 8px 32.5px;
+    transition: .3s;
+}
+.nav__link:hover{
+    background: var(--green);
+    color: var(--white);
+}
+.header__info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 30px;
+}
+.header__bottom{
+    position: absolute;
+    top: 186px;
+    left: 654px;
+}
+.header__title{
+    font-family: var(--MM);
+    font-size: 68px;
+    line-height: 83px;
+    color: var(--green);
+    width: 523px;
+}
+.header__txt{
+    font-family: var(--MR);
+    font-size: 18px;
+    line-height: 32px;
+    color: #2C1500;
+    opacity: 0.8;
+    width: 493px;
+}
+.other-pages{
+    display: flex;
+}
+.other-in{
+    font-family: var(--MM);
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+.o-page{
+    padding: 40.5px 49px 38px;
+    transition: .3s;
+    margin-top: 108px;
+}
+.o-page:hover{
+    background: var(--green);
+}
+.o-page:hover>h3{
+    color: var(--white);
+}
+.plant{
+    font-family: var(--MM);
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--green);
+}
+.others{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 13.5px;
+}
+.transform{
+    transform: rotate(180deg);
+}
+/* header end */
+
+/* product start */
+
+.section__inner1{
+    display: flex;
+    padding: 140px 56px 0;
+    gap: 32px;
+
+}
+.section__card{
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    padding: 21px 16px;
+}
+.section__img-title{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.section__title1{
+    font-family: var(--MB);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--green);
+}
+.section__text1{
+    font-family: var(--MR);
+    font-size: 10px;
+    line-height: 16px;
+    color: #2C1500;
+    padding-top: 16px;
+}
+.section__inner2{
+    display: flex;
+    padding: 512px 56px 0;
+    justify-content: space-between;
+}
+.section__h-p{
+    max-width: 522px;
+    width: 100%;
+    margin-bottom: 87px;
+    padding-left: 23px;
+}
+.section__title2{
+    font-family: var(--MB);
+    font-size: 40px;
+    line-height: 56px;
+    color: #2C1500;
+    padding-bottom: 16px;
+}
+.section__text2{
+    font-family: var(--MR);
+    font-size: 16px;
+    line-height: 28px;
+    color: #2C1500;
+    opacity: 0.8;
+}
+.section__inner3{
+    padding: 80px 56px;
+    display: flex;
+    justify-content: space-between;
+}
+.section__left2{
+    padding-left: 97px;
+    align-self: center;
+}
+.section__title3{
+    font-family: var(--MB);
+    font-size: 40px;
+    line-height: 56px;
+    color: #2C1500;
+    padding-bottom: 32px;
+}
+.section__btn{
+    font-family: var(--NBO);
+    font-size: 14px;
+    line-height: 20px;
+    color: #FAFEFE;
+    background: var(--green);
+    border: 1px solid var(--green);
+    padding: 10px 42px;
+    transition: .3s;
+}
+.section__btn:hover{
+    background-color: #035d57;
+    cursor: pointer;
+}
+
+/* product end */
+.line{
+    opacity: 0.3;
+    border: 1px solid var(--green);
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* footer start */
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    max-width: 941px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0 71px;
+}
+.footer__logo{
+    font-family: var(--PM);
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--green);
+    padding-bottom: 24px;
+}
+.footer__title{
+    font-family: var(--WM);
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+.footer__txt{
+    font-family: var(--WR);
+    font-size: 13px;
+    line-height: 20px;
+    color: #4F4F4F;
+    padding-top: 10px;
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--WR);
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    gap: 14px;
+    padding-top: 20px;
+}
+.footer__form{
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+.form__email{
+    font-family: var(--WR);
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    opacity: 0.5;
+    padding: 8px 87px 8px 13px;
+    border: 1px solid #F2F2F2;
+    border-radius: 2px;
+    outline: none;
+}
+.form__btn{
+    font-family: var(--RM);
+    font-size: 8px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--white);
+    padding: 4px 12px;
+    background: var(--green);
+    border: none;
+    outline: none;
+    transition: .3s;
+}
+.form__btn:hover{
+    background: #055751;
+    cursor: pointer;
+}
+
+/* footer end */
